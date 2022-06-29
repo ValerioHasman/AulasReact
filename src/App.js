@@ -1,24 +1,18 @@
+import { useState } from 'react'
+import SeuNome from './components/SeuNome'
 import './App.css';
-import HelloWord from './components/HelloWord'
-import SayMyName from './components/SayMyName'
-import Pessoa from './components/Pessoa'
-import Frase from './components/Frase'
-import List from './components/List'
-
+import Saudacao from './components/Saudacao';
 
 function App() {
-  const nome = "Maria"
+
+  const [nome, setNome] = useState()
   return (
     <div className="App">
-      <h1>Testando o css</h1>
-      <Frase/>
-      <Frase/>
-      <Pessoa foto="https://www.colorironline.com/images/imgcolor/desenho-fernando-pessoa-3-para-colorir.jpg"
-              nome="José"
-              idade="55"
-              profissao="Carpinteiro"
-      />
-      <List />
+      <h1>Renderização de OutraLista</h1>
+      <SeuNome setNome={setNome}/>
+      <p>{nome}</p>
+      <Saudacao nome={nome} />
+
     </div>
   );
 }
