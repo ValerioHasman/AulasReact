@@ -1,0 +1,13 @@
+.list {
+    display: flex;
+    list-style: none;
+}
+
+.item {
+    margin-right: 2em;
+}
+.item a {
+    padding: 0.5rem;
+    background-color: rgb(201, 181, 176);
+    color: black;
+}

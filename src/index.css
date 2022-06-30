@@ -15,5 +15,6 @@ code {
 }
 
 p {
-  background-color: brown;
+  background-color: rgb(68, 14, 14);
+  padding: 20px;
 }
